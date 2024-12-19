@@ -1,0 +1,38 @@
+---
+title: Linked Account
+description: Account linking allows quicker and easier access to commands.
+sidebar:
+    order: 1
+---
+
+## Description
+
+Linking a player to your Discord account will allow you to use commands without specifying the player everytime.
+
+**To link to a player, the player's Discord social setting on Hypixel must be set to your Discord account username:**
+
+![Linking Example](https://statalytics.net/static/gifs/link.gif)
+
+## Commands
+
+import CommandInfo from '../../../components/CommandInfo.jsx';
+
+<CommandInfo
+    commandSyntax="/link <player>"
+    commandDescription="Link a player to your Discord account."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to link to your Discord account."
+        }
+    ]}
+/>
+
+<br />
+<hr />
+<br />
+
+<CommandInfo
+    commandSyntax="/unlink"
+    commandDescription="Unlink your Discord account the player that it is linked to (if any)."
+/>

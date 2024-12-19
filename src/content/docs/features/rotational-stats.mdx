@@ -1,0 +1,253 @@
+---
+title: Rotational Stats
+description: Rotational stats track stats over time.
+sidebar:
+    order: 3
+---
+
+## Description
+
+Rotational stats track daily, weekly, monthly, and yearly stats over time. Past rotational stats are also accessible via commands.
+
+## Resetting
+
+There are two ways that rotational stats can be reset: manually triggered and automatically triggered.
+
+##### Manually Triggered
+
+Manually triggered rotational stat resetting occurs when a player's Hypixel stats are checked for the first time after a day, week, month, or year has passed.
+
+##### Automatically Triggered
+
+Automatically triggered rotational stat resetting happens automatically at a certain reset time. For more information on reset times, see [Reset Time](/settings/reset-time/).
+
+:::note
+Due to limitations with Hypixel's API policy, automatic rotational resetting is now restricted to <a href="https://statalytics.net/premium" target="_blank">Statalytics Pro users</a>.
+:::
+
+
+## Commands
+
+import CommandInfo from '../../../components/CommandInfo.jsx';
+
+### Active Rotational Stats
+
+*Shows current rotational stats.*
+
+<br />
+
+<CommandInfo
+    commandSyntax="/daily [<player>]"
+    commandDescription="Show the daily rotational stats for a player."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view daily rotational stats for."
+        }
+    ]}
+/>
+
+
+<br />
+<hr />
+<br />
+
+
+<CommandInfo
+    commandSyntax="/weekly [<player>]"
+    commandDescription="Show the weekly rotational stats for a player."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view weekly rotational stats for."
+        }
+    ]}
+/>
+
+
+<br />
+<hr />
+<br />
+
+
+<CommandInfo
+    commandSyntax="/monthly [<player>]"
+    commandDescription="Show the monthly rotational stats for a player."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view monthly rotational stats for."
+        }
+    ]}
+/>
+
+
+<br />
+<hr />
+<br />
+
+
+<CommandInfo
+    commandSyntax="/yearly [<player>]"
+    commandDescription="Show the yearly rotational stats for a player."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view yearly rotational stats for."
+        }
+    ]}
+/>
+
+
+### Historical Rotational Stats
+
+*Shows past (historical) rotational stats.*
+
+<br />
+
+<CommandInfo
+    commandSyntax="/lastday [<player>] [<days>]"
+    commandDescription="Show the historical rotational stats from the last day."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view historical rotational stats for."
+        },
+        {
+            "name": "days",
+            "description": "The number of days ago to show historical rotational stats from."
+        }
+    ]}
+/>
+
+
+<br />
+<hr />
+<br />
+
+
+<CommandInfo
+    commandSyntax="/lastweek [<player>] [<weeks>]"
+    commandDescription="Show the historical rotational stats from the last week."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view historical rotational stats for."
+        },
+        {
+            "name": "weeks",
+            "description": "The number of weeks ago to show historical rotational stats from."
+        }
+    ]}
+/>
+
+
+<br />
+<hr />
+<br />
+
+
+<CommandInfo
+    commandSyntax="/lastmonth [<player>] [<months>]"
+    commandDescription="Show the historical rotational stats from the last month."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view historical rotational stats for."
+        },
+        {
+            "name": "months",
+            "description": "The number of months ago to show historical rotational stats from."
+        }
+    ]}
+/>
+
+
+<br />
+<hr />
+<br />
+
+
+<CommandInfo
+    commandSyntax="/lastyear [<player>] [<years>]"
+    commandDescription="Show the historical rotational stats from the last year."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view historical rotational stats for."
+        },
+        {
+            "name": "years",
+            "description": "The number of years ago to show historical rotational stats from."
+        }
+    ]}
+/>
+
+### Rotational Stat Differences
+
+*Shows improvements in WLR, KDR, FKDR, and BBLR.*
+{/* *Shows improvements in W/L ratio, K/D ratio, FK/D ratio, and BB/L ratio.* */}
+
+<br />
+
+<CommandInfo
+    commandSyntax="/difference daily [<player>]"
+    commandDescription="Show the daily stat ratio improvements for a player."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view daily stat ratio improvements for."
+        }
+    ]}
+/>
+
+
+<br />
+<hr />
+<br />
+
+
+<CommandInfo
+    commandSyntax="/difference weekly [<player>]"
+    commandDescription="Show the weekly stat ratio improvements for a player."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view weekly stat ratio improvements for."
+        }
+    ]}
+/>
+
+
+<br />
+<hr />
+<br />
+
+
+<CommandInfo
+    commandSyntax="/difference monthly [<player>]"
+    commandDescription="Show the monthly stat ratio improvements for a player."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view monthly stat ratio improvements for."
+        }
+    ]}
+/>
+
+
+<br />
+<hr />
+<br />
+
+
+<CommandInfo
+    commandSyntax="/difference yearly [<player>]"
+    commandDescription="Show the yearly stat ratio improvements for a player."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view yearly stat ratio improvements for."
+        }
+    ]}
+/>

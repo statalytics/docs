@@ -1,0 +1,50 @@
+---
+title: Other Commands
+description: Other individual non-bedwars related commands.
+sidebar:
+    order: 5
+---
+
+## Description
+
+The following commands can be used for other non-bedwars related purposes.
+
+## Commands
+### Player Info
+
+import CommandInfo from '../../../components/CommandInfo.jsx';
+
+<CommandInfo
+    commandSyntax="/skin [<player>]"
+    commandDescription="Show the player skin of a player."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view the skin of."
+        }
+    ]}
+/>
+
+<br />
+<hr />
+<br />
+
+<CommandInfo
+    commandSyntax="/who [<player>]"
+    commandDescription="Convert a player's username to their UUID or vice versa."
+    note="This commmand also works with the Discord IDs of linked users."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to convert."
+        }
+    ]}
+/>
+
+
+### Bot & Services Information
+
+<CommandInfo
+    commandSyntax="/info"
+    commandDescription="Show technical information about Statalytics."
+/>

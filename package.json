@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "statalytics-docs",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,7 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/react": "^4.1.1",
     "@astrojs/starlight": "^0.30.2",
+    "@mdx-js/react": "^3.1.0",
     "astro": "^5.0.2",
     "sharp": "^0.32.5"
   }

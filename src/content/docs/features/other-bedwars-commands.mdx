@@ -1,0 +1,223 @@
+---
+title: Other Bedwars Commands
+description: Other individual bedwars commands.
+sidebar:
+    order: 4
+---
+
+## Description
+
+The following commands can be used to view other Bedwars stats.
+
+## Stat Commands
+
+import CommandInfo from '../../../components/CommandInfo.jsx';
+
+### Current Bedwars Stats
+
+<CommandInfo
+    commandSyntax="/bedwars [<player>]"
+    commandDescription="Show the current general Bedwars stats for a player."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view Bedwars stats for."
+        }
+    ]}
+/>
+
+<br />
+<hr />
+<br />
+
+<CommandInfo
+    commandSyntax="/pointless [<player>]"
+    commandDescription="Show the current pointless Bedwars stats for a player."
+    note="This command shows random useless stats."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view Bedwars stats for."
+        }
+    ]}
+/>
+
+
+
+### Quest Stats
+
+<CommandInfo
+    commandSyntax="/quests [<player>]"
+    commandDescription="Show the current quest completion stats for a player."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view quest stats for."
+        }
+    ]}
+/>
+
+### Stat Comparison
+
+<CommandInfo
+    commandSyntax="/compare <player_1> [<player_2>]"
+    commandDescription="Show the stat comparison between two players."
+    note="Not specifying the second player will compare to the first player to your linked player."
+    args={[
+        {
+            "name": "player_1",
+            "description": "The first player to compare."
+        },
+        {
+            "name": "player_2",
+            "description": "The second player to compare."
+        }
+    ]}
+/>
+
+
+### Practice Mode Stats
+
+<CommandInfo
+    commandSyntax="/practice [<player>]"
+    commandDescription="Show the current practice mode stats for a player."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view practice mode stats for."
+        }
+    ]}
+/>
+
+
+### Stat Milestones
+
+<CommandInfo
+    commandSyntax="/milestones [<player>] [<session>]"
+    commandDescription="Show the next stat milestones for a player."
+    note="Session stats will be factored into the calculations. To not use session stats, specify a session ID of 0."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view stat milestones for."
+        },
+        {
+            "name": "session",
+            "description": "The session ID of the session to derive milestones from."
+        }
+    ]}
+/>
+
+
+### Average Stats
+
+<CommandInfo
+    commandSyntax="/average [<player>]"
+    commandDescription="Show the average ratios and rates for a player."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view average stats for."
+        }
+    ]}
+/>
+
+
+### Resources Collected Stats
+
+<CommandInfo
+    commandSyntax="/resources [<player>]"
+    commandDescription="Show the resources collected stats for a player."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view resources collected stats for."
+        }
+    ]}
+/>
+
+
+## Other Info Commands
+
+### Most Played Modes
+
+<CommandInfo
+    commandSyntax="/mostplayed [<player>]"
+    commandDescription="Display a graph of the distribution of modes played by a player."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view most played stats for."
+        }
+    ]}
+/>
+
+
+### Winstreak Info
+
+<CommandInfo
+    commandSyntax="/winstreaks [<player>]"
+    commandDescription="Show the current winstreak for each mode for a player."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view winstreaks for."
+        }
+    ]}
+/>
+
+
+### Active Cosmetics
+
+<CommandInfo
+    commandSyntax="/activecosmetics [<player>]"
+    commandDescription="List the active cosmetics that a player has selected."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view active cosmetics for."
+        }
+    ]}
+/>
+
+
+### Quickbuy Menu Layout
+
+<CommandInfo
+    commandSyntax="/shop [<player>]"
+    commandDescription="Display the quickbuy menu layout for a player."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view the quickbuy menu for."
+        }
+    ]}
+/>
+
+
+### Hotbar Layout
+
+<CommandInfo
+    commandSyntax="/hotbar [<player>]"
+    commandDescription="Display the hotbar layout for a player."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view the hotbar for."
+        }
+    ]}
+/>
+
+
+### Player Displayname
+
+<CommandInfo
+    commandSyntax="/displayname [<player>]"
+    commandDescription="Render the player's bedwars display name including rank and stars."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view the display name for."
+        }
+    ]}
+/>

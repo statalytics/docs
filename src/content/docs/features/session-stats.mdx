@@ -1,0 +1,93 @@
+---
+title: Session Stats
+description: Session stats track stats since a certain point in time.
+sidebar:
+    order: 1
+---
+
+## Description
+
+Session stats can be used to view stats since a certain point in time. The maximum concurrent sessions that can be tracked is 2 for free users, or 5 for [premium users](/premium/plans/).
+
+Session stats are especially beneficial as they more accurately reflect a player's skill level. For this reason they are factored into the calculations of a range of different features, such as milestones, projected stats, and more.
+
+
+## Commands
+
+import CommandInfo from '../../../components/CommandInfo.jsx';
+
+<CommandInfo
+    commandSyntax="/session stats [<player>] [<session>]"
+    commandDescription="View the session stats for a player."
+    note="A session will be created if one does not already exist."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view session stats for."
+        },
+        {
+            "name": "session",
+            "description": "The session ID of the session to view session stats for."
+        }
+    ]}
+/>
+
+
+<br />
+<hr />
+<br />
+
+
+<CommandInfo
+    commandSyntax="/session active"
+    commandDescription="List your active sessions."
+    requiresLinking={true}
+/>
+
+
+<br />
+<hr />
+<br />
+
+
+<CommandInfo
+    commandSyntax="/session start"
+    commandDescription="Create a new session."
+    requiresLinking={true}
+/>
+
+
+<br />
+<hr />
+<br />
+
+
+<CommandInfo
+    commandSyntax="/session reset [<session>]"
+    commandDescription="Reset a session."
+    requiresLinking={true}
+    args={[
+        {
+            "name": "session",
+            "description": "The session ID of the session to reset."
+        }
+    ]}
+/>
+
+
+<br />
+<hr />
+<br />
+
+
+<CommandInfo
+    commandSyntax="/session end [<session>]"
+    commandDescription="End a session."
+    requiresLinking={true}
+    args={[
+        {
+            "name": "session",
+            "description": "The session ID of the session to end."
+        }
+    ]}
+/>

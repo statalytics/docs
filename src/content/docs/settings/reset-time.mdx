@@ -1,0 +1,32 @@
+---
+title: Reset Time
+description: Rotational reset times determine when rotational stats will roll over.
+sidebar:
+    order: 3
+---
+
+## Description
+
+Rotational reset times are used to define when rotational stats roll over. For more information on rotational stats, see [Rotational Stats](/features/rotational-stats/).
+
+Reset times can be configure to include a GMT offset, reset hour, and reset minute, allowing for more control over when rotational stats roll over.
+
+**GMT Offset**: The GMT offset to use for the reset time. For example, -5 would be UTC-5.\
+**Reset Hour**: The hour to reset rotational stats.\
+**Reset Minute**: The minute to reset rotational stats.
+
+
+:::note
+Because automatic rotational resetting is now restricted to <a href="https://statalytics.net/premium" target="_blank">Statalytics Pro users</a>, setting a reset time will otherwise have no effect.
+
+For more information, see [Rotational Stats](/features/rotational-stats/).
+:::
+
+## Commands
+
+import CommandInfo from '../../../components/CommandInfo.jsx';
+
+<CommandInfo
+    commandSyntax="/settings"
+    commandDescription="Configure your Statalytics settings, including your reset time."
+/>

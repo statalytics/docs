@@ -1,0 +1,81 @@
+---
+title: Projected Stats
+description: Projected stats use session stats to predict future stats.
+sidebar:
+    order: 2
+---
+
+## Description
+
+Projected stats extrapolate session stats to predict future stats. For more information on session stats, see [Session Stats](/features/session-stats/).
+
+:::note
+Because projected stats are extrapolated from session stats, newly created sessions will yield less accurate results.
+:::
+
+
+## Commands
+
+import CommandInfo from '../../../components/CommandInfo.jsx';
+
+<CommandInfo
+    commandSyntax="/prestige [<prestige] [<player>] [<session>]"
+    commandDescription="Project a player's stats at a certain prestige."
+    args={[
+        {
+            "name": "prestige",
+            "description": "The prestige to project stats for."
+        },
+        {
+            "name": "player",
+            "description": "The player to view projected prestige stats for."
+        },
+        {
+            "name": "session",
+            "description": "The session ID of the session to derive prestige stats from."
+        }
+    ]}
+/>
+
+
+<br />
+<hr />
+<br />
+
+
+<CommandInfo
+    commandSyntax="/year 2025 [<player>] [<session>]"
+    commandDescription="Project a player's stats at the beginning of 2025."
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view projected 2025 stats for."
+        },
+        {
+            "name": "session",
+            "description": "The session ID of the session to derive 2025 stats from."
+        }
+    ]}
+/>
+
+
+<br />
+<hr />
+<br />
+
+
+<CommandInfo
+    commandSyntax="/year 2026 [<player>] [<session>]"
+    commandDescription="Project a player's stats at the beginning of 2026."
+    requiresPremium={true}
+    args={[
+        {
+            "name": "player",
+            "description": "The player to view projected 2026 stats for."
+        },
+        {
+            "name": "session",
+            "description": "The session ID of the session to derive 2026 stats from."
+        }
+    ]}
+/>
