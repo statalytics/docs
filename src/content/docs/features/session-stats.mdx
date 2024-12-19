@@ -19,7 +19,7 @@ import CommandInfo from '../../../components/CommandInfo.jsx';
 <CommandInfo
     commandSyntax="/session stats [<player>] [<session>]"
     commandDescription="View the session stats for a player."
-    note="A session will be created if one does not already exist."
+    note="If there isn't an existing session, one will be created."
     args={[
         {
             "name": "player",
@@ -40,7 +40,7 @@ import CommandInfo from '../../../components/CommandInfo.jsx';
 
 <CommandInfo
     commandSyntax="/session active"
-    commandDescription="List your active sessions."
+    commandDescription="View a list of your active sessions."
     requiresLinking={true}
 />
 
